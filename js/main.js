@@ -35,6 +35,14 @@ $(function(){
 	var scienceMuseums = $('#scienceMuseums');
 
 	var map;
+	var locations = [
+	{name: 'The Brooklyn Museum', address: "16369 Eastern Pkwy, Brooklyn, NY 11238", lat: 40.672313, lng: -73.963524},
+	{name: 'The Brooklyn Botanical Garden', address: '990 Washington Avenue, Brooklyn, NY 11225', lat: 40.666286, lng: -73.962062},
+    {name: 'The Weeksville Heritage Center', address: '1698 Bergen St, Brooklyn, NY 11213', lat: 40.674237, lng: -73.925396},
+    {name: 'The MoCADA', address: "80 Hanson Pl, Brooklyn, NY 11217", lat: 40.685475, lng: -73.974382},
+    {name: 'The Jewish Childrens Museum', address: '792 Eastern Pkwy, Brooklyn, NY 11213', lat: 40.669153, lng: -73.941910},
+    {name: 'The Coney Island USA', address: '1698 Bergen St, Brooklyn, NY 11213', lat: 40.579123, lng: -73.925396}
+	];
 
 	// start with all tab details hidden
 	subjectList.hide(); zipcodeList.hide();
@@ -149,7 +157,7 @@ function initialize() {
 
 	var mapOptions = {
 	    zoom: 11,
-	    center: {lat: 40.736410, lng: -73.993803}
+	    center: {lat: 40.676207, lng: -73.943919}
 	  	};
 
 	  	map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
@@ -158,14 +166,6 @@ function initialize() {
 google.maps.event.addDomListener(window, 'load', initialize);
 
 function locationsShow(){
-	var locations = [
-	{name: 'The Brooklyn Museum', address: "16369 Eastern Pkwy, Brooklyn, NY 11238", lat: 40.672313, lng: -73.963524},
-	{name: 'The Brooklyn Botanical Garden', address: '990 Washington Avenue, Brooklyn, NY 11225', lat: 40.666286, lng: -73.962062},
-    {name: 'The Weeksville Heritage Center', address: '1698 Bergen St, Brooklyn, NY 11213', lat: 40.674237, lng: -73.925396},
-    {name: 'The MoCADA', address: "80 Hanson Pl, Brooklyn, NY 11217", lat: 40.685475, lng: -73.974382},
-    {name: 'The Jewish Childrens Museum', address: '792 Eastern Pkwy, Brooklyn, NY 11213', lat: 40.669153, lng: -73.941910},
-    {name: 'The Coney Island USA', address: '1698 Bergen St, Brooklyn, NY 11213', lat: 40.579123, lng: -73.925396}
-	];
 
   	locations.forEach(function(element, index, array){
     var marker, content;
