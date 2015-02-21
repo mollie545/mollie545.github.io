@@ -44,6 +44,13 @@ $(function(){
     {name: 'The Coney Island USA', address: '1698 Bergen St, Brooklyn, NY 11213', lat: 40.579123, lng: -73.925396}
 	];
 
+	var dropdown = $('#dropdownMenu1');
+
+	dropdown.on("click", function(){
+		alert("hi");
+		locations.hide();
+	});
+
 	// start with all tab details hidden
 	subjectList.hide(); zipcodeList.hide();
 	manhattanMuseums.hide(); queensMuseums.hide(); statenislandMuseums.hide(); bronxMuseums.hide(); brooklynMuseums.hide();
@@ -109,7 +116,7 @@ $(function(){
 		manhattanMuseums.hide(); queensMuseums.hide(); statenislandMuseums.hide(); bronxMuseums.hide(); 
 		brooklynMuseums.show();
 		$(':input').not(":button").val('');	
-		brooklynlocationsShow();
+		locationsShow();
 	});
 
 	manhattan.on("click", function(){
@@ -165,7 +172,7 @@ function initialize() {
 
 google.maps.event.addDomListener(window, 'load', initialize);
 
-function brooklynlocationsShow(){
+function locationsShow(){
 
   	locations.forEach(function(element, index, array){
     var marker, content;
