@@ -63,6 +63,8 @@ $(function(){
 	african.on("click", function(){
 		event.preventDefault();
 
+		clearMarkers();
+
         manhattanMuseums.hide(); queensMuseums.hide(); statenislandMuseums.hide(); bronxMuseums.hide(); brooklynMuseums.hide();
 		asianMuseums.hide(); europeanMuseums.hide(); modernMuseums.hide(); scienceMuseums.hide();
 		africanMuseums.show();
@@ -72,6 +74,8 @@ $(function(){
 
 	asian.on("click", function(){
 		event.preventDefault();
+
+		clearMarkers();
 
 		manhattanMuseums.hide(); queensMuseums.hide(); statenislandMuseums.hide(); bronxMuseums.hide(); brooklynMuseums.hide();
 		africanMuseums.hide(); europeanMuseums.hide(); modernMuseums.hide(); scienceMuseums.hide();
@@ -83,6 +87,8 @@ $(function(){
 	european.on("click", function(){
 		event.preventDefault();
 
+		clearMarkers();
+
 		manhattanMuseums.hide(); queensMuseums.hide(); statenislandMuseums.hide(); bronxMuseums.hide(); brooklynMuseums.hide();
 		africanMuseums.hide(); asianMuseums.hide(); modernMuseums.hide(); scienceMuseums.hide();
 		europeanMuseums.show();
@@ -92,6 +98,8 @@ $(function(){
 
 	modern.on("click", function(){
 		event.preventDefault();
+
+		clearMarkers();
 
 		manhattanMuseums.hide(); queensMuseums.hide(); statenislandMuseums.hide(); bronxMuseums.hide(); brooklynMuseums.hide();
 		africanMuseums.hide(); asianMuseums.hide(); europeanMuseums.hide(); scienceMuseums.hide();
@@ -104,6 +112,8 @@ $(function(){
 	science.on("click", function(){
 		event.preventDefault();
 
+		clearMarkers();
+
 		manhattanMuseums.hide(); queensMuseums.hide(); statenislandMuseums.hide(); bronxMuseums.hide(); brooklynMuseums.hide();
 		africanMuseums.hide(); asianMuseums.hide(); europeanMuseums.hide(); modernMuseums.hide();
 		scienceMuseums.show();
@@ -113,6 +123,8 @@ $(function(){
 
 	brooklyn.on("click", function(){
 		event.preventDefault();
+
+		clearMarkers();
 
 		africanMuseums.hide(); asianMuseums.hide(); europeanMuseums.hide(); modernMuseums.hide(); scienceMuseums.hide();
 		manhattanMuseums.hide(); queensMuseums.hide(); statenislandMuseums.hide(); bronxMuseums.hide(); 
@@ -124,6 +136,8 @@ $(function(){
 	manhattan.on("click", function(){
 		event.preventDefault();
 
+		clearMarkers();
+
 		africanMuseums.hide(); asianMuseums.hide(); europeanMuseums.hide(); modernMuseums.hide(); scienceMuseums.hide();
 		brooklynMuseums.hide(); queensMuseums.hide(); statenislandMuseums.hide(); bronxMuseums.hide();
 		manhattanMuseums.show();
@@ -134,6 +148,8 @@ $(function(){
 	queens.on("click", function(){
 		event.preventDefault();
 
+		clearMarkers();
+
 		africanMuseums.hide(); asianMuseums.hide(); europeanMuseums.hide(); modernMuseums.hide(); scienceMuseums.hide();
 		brooklynMuseums.hide(); manhattanMuseums.hide(); statenislandMuseums.hide(); bronxMuseums.hide();
 		queensMuseums.show();
@@ -143,6 +159,8 @@ $(function(){
 
 	statenisland.on("click", function(){
 		event.preventDefault();
+
+		clearMarkers();
 
 		africanMuseums.hide(); asianMuseums.hide(); europeanMuseums.hide(); modernMuseums.hide(); scienceMuseums.hide();
 		brooklynMuseums.hide(); manhattanMuseums.hide(); queensMuseums.hide(); bronxMuseums.hide();
