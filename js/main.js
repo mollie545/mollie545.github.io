@@ -1,6 +1,8 @@
 /* global $:false */
 /* jshint ignore:start */
 /* jshint ignore:end */
+window.markers = []
+
 
 $(function(){
 	// get the amount chosen and store it into a variable
@@ -47,8 +49,8 @@ $(function(){
 	var dropdown = $('#dropdownMenu1');
 
 	dropdown.on("click", function(){
-		alert("hi");
-		locations.hide();
+		//alert("hi");
+		
 	});
 
 	// start with all tab details hidden
@@ -152,6 +154,8 @@ $(function(){
 	bronx.on("click", function(){
 		event.preventDefault();
 
+		clearMarkers();
+
 		africanMuseums.hide(); asianMuseums.hide(); europeanMuseums.hide(); modernMuseums.hide(); scienceMuseums.hide();
 		brooklynMuseums.hide(); manhattanMuseums.hide(); queensMuseums.hide(); statenislandMuseums.hide();
 		bronxMuseums.show();
@@ -187,10 +191,18 @@ function locationsShow(){
       map: map,
       title: element.name
     });
+    markers.push(marker)
 
     return marker;
   }
 
+}
+
+function clearMarkers(){
+   for (var i = 0; i < markers.length; i++) {
+        markers[i].setMap(null);
+    }
+    markers = [];
 }
 
 });
