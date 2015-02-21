@@ -109,7 +109,7 @@ $(function(){
 		manhattanMuseums.hide(); queensMuseums.hide(); statenislandMuseums.hide(); bronxMuseums.hide(); 
 		brooklynMuseums.show();
 		$(':input').not(":button").val('');	
-		locationsShow();
+		brooklynlocationsShow();
 	});
 
 	manhattan.on("click", function(){
@@ -165,7 +165,7 @@ function initialize() {
 
 google.maps.event.addDomListener(window, 'load', initialize);
 
-function locationsShow(){
+function brooklynlocationsShow(){
 
   	locations.forEach(function(element, index, array){
     var marker, content;
