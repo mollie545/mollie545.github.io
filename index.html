@@ -1,0 +1,322 @@
+<!doctype html>
+
+<html lang="en-us">
+
+	<head>
+		<title>Perpetual Pupil</title>
+
+		    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		    <meta charset="utf-8">
+		    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+		<link href="css/styles.css" type="text/css" rel="stylesheet"/>
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow">
+		<link rel="shortcut icon" href="images/downloadpp-20150104-favicon.ico">
+	</head>
+
+	<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <h3 href="#">The Perpetual Pupil</h3>
+      <h5>For Those Who Love to Learn</h5></a>
+    </div>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li class="navLink"><a href="#">How It Works</a></li>
+        <li class="navLink"><a href="#">Who We Are</a></li>
+        <li class="navLink"><a href="#">Resources</a></li>
+        <li class="navLink"><a href="#">Get Started</a></li>        
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<img src="images/booksinbed.jpg" class="booksInBed">
+
+	<div class = 'center'>
+
+		<div class="dropdown subjectEntry">
+		  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+		    Search by Subject
+		    <span class="caret"></span>
+		  </button>
+		  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+		    	<li role="presentation"><a role="menuitem" tabindex="-1" href="#" value="African" id="African">African Museums</a></li>
+			    <li role="presentation"><a role="menuitem" tabindex="-1" href="#" value="Asian" id="Asian">Asian Museums</a></li>
+			    <li role="presentation"><a role="menuitem" tabindex="-1" href="#" value="European" id="European">European Museums</a></li>
+			    <li role="presentation"><a role="menuitem" tabindex="-1" href="#" value="Modern" id="Modern">Modern Museums</a></li>
+			    <li role="presentation"><a role="menuitem" tabindex="-1" href="#" value="Science" id="Science">Science Museums</a></li>
+		  </ul>
+		</div>
+		<div class="dropdown zipcodeEntry">
+		  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+		    Search by Zipcode
+		    <span class="caret"></span>
+		  </button>
+		  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+		    	<li role="presentation"><a role="menuitem" tabindex="-1" href="#" value="Brooklyn" id="Brooklyn">Brooklyn</a></li>
+			    <li role="presentation"><a role="menuitem" tabindex="-1" href="#" value="Manhattan" id="Manhattan">Manhattan</a></li>
+			    <li role="presentation"><a role="menuitem" tabindex="-1" href="#" value="Queens" id="Queens">Queens</a></li>
+			    <li role="presentation"><a role="menuitem" tabindex="-1" href="#" value="Statenisland" id="Statenisland">Staten Island</a></li>
+			    <li role="presentation"><a role="menuitem" tabindex="-1" href="#" value="Bronx" id="Bronx">Bronx</a></li>
+		  </ul>
+		</div>
+
+		<div class="museumDetails">
+			<table id="brooklynMuseums">
+				<tr><td><a href='http://www.brooklynmuseum.org/calendar/' target="_blank">Brooklyn Museum</a></td> 
+					<td>Brooklyn, NY</td></tr>
+				<tr><td><a href='http://www.bbg.org/visit/calendar' target="_blank">Brooklyn Botanical Garden</a></td>
+					<td>Brooklyn, NY</td></tr>
+				<tr><td><a href='http://www.bbg.org/visit/calendar' target="_blank">Weeksville Heritage Center</a></td>
+					<td>Brooklyn, NY</td></tr>
+				<tr><td><a href='http://www.bbg.org/visit/calendar' target="_blank">MoCADA</a></td>
+					<td>Brooklyn, NY</td></tr>
+				<tr><td><a href='http://www.bbg.org/visit/calendar' target="_blank">Jewish Children's Museum</a></td>
+					<td>Brooklyn, NY</td></tr>
+				<tr><td><a href='http://www.bbg.org/visit/calendar' target="_blank">Coney Island USA</a></td>
+					<td>Brooklyn, NY</td></tr>
+				<tr><td><a href='http://www.bbg.org/visit/calendar' target="_blank">Brooklyn Botanic Garden</a></td>
+					<td>Brooklyn, NY</td></tr>
+				<tr><td><a href='http://www.bbg.org/visit/calendar' target="_blank">Jewish Children's Museum</a></td>
+					<td>Brooklyn, NY</td></tr>
+				<tr><td><a href='http://www.bbg.org/visit/calendar' target="_blank">Coney Island USA</a></td>
+					<td>Brooklyn, NY</td></tr>
+				<tr><td><a href='http://www.bbg.org/visit/calendar' target="_blank">Brooklyn Botanic Garden</a></td>
+					<td>Brooklyn, NY</td></tr>
+			</table>
+			<table id="manhattanMuseums">
+				<tr><td><a href='http://www.amnh.org/calendar' target="_blank">American Museum of Natural History</a></td> 
+					<td>Manhattan, NY</td></tr>
+				<tr><td><a href='http://asiasociety.org/events' target="_blank">Asia Society</a></td>
+					<td>Manhattan, NY</td></tr>
+				<tr><td><a href='http://asiasociety.org/events' target="_blank">Metropolitan Museum of Art</a></td>
+					<td>Manhattan, NY</td></tr>
+				<tr><td><a href='http://asiasociety.org/events' target="_blank">Museum for African Art</a></td>
+					<td>Manhattan, NY</td></tr>
+				<tr><td><a href='http://asiasociety.org/events' target="_blank">Asian American Arts Centre</a></td>
+					<td>Manhattan, NY</td></tr>
+				<tr><td><a href='http://asiasociety.org/events' target="_blank">Americas Society</a></td>
+					<td>Manhattan, NY</td></tr>
+				<tr><td><a href='http://asiasociety.org/events' target="_blank">Anne Frank Center USA</a></td>
+					<td>Manhattan, NY</td></tr>
+				<tr><td><a href='http://asiasociety.org/events' target="_blank">Asian American Arts Centre</a></td>
+					<td>Manhattan, NY</td></tr>
+				<tr><td><a href='http://asiasociety.org/events' target="_blank">Americas Society</a></td>
+					<td>Manhattan, NY</td></tr>
+				<tr><td><a href='http://asiasociety.org/events' target="_blank">Anne Frank Center USA</a></td>
+					<td>Manhattan, NY</td></tr>
+			</table>
+			<table id="queensMuseums">
+				<tr><td><a href='http://www.movingimage.us/visit/calendar/week/attribute/1' target="_blank">Museum of the Moving Image</a></td> 
+					<td>Queens, NY</td></tr>
+				<tr><td><a href='http://www.queensmuseum.org/events/' target="_blank">Queens Museum</a></td>
+					<td>Queens, NY</td></tr>
+				<tr><td><a href='http://www.queensmuseum.org/events/' target="_blank">Lewis H. Latimer House</a></td>
+					<td>Queens, NY</td></tr>
+				<tr><td><a href='http://www.queensmuseum.org/events/' target="_blank">Noguchi Museum</a></td>
+					<td>Queens, NY</td></tr>
+				<tr><td><a href='http://www.queensmuseum.org/events/' target="_blank">SculptureCenter</a></td>
+					<td>Queens, NY</td></tr>
+				<tr><td><a href='http://www.queensmuseum.org/events/' target="_blank">Louis Armstrong House</a></td>
+					<td>Queens, NY</td></tr>
+				<tr><td><a href='http://www.queensmuseum.org/events/' target="_blank">New York Hall of Science</a></td>
+					<td>Queens, NY</td></tr>
+				<tr><td><a href='http://www.queensmuseum.org/events/' target="_blank">SculptureCenter</a></td>
+					<td>Queens, NY</td></tr>
+				<tr><td><a href='http://www.queensmuseum.org/events/' target="_blank">Louis Armstrong House</a></td>
+					<td>Queens, NY</td></tr>
+				<tr><td><a href='http://www.queensmuseum.org/events/' target="_blank">New York Hall of Science</a></td>
+					<td>Queens, NY</td></tr>
+			</table>
+			<table id="statenislandMuseums">
+				<tr><td><a href='http://aliceausten.org/events/' target="_blank">Alice Austen House</a></td> 
+					<td>Staten Island, NY</td></tr>
+				<tr><td><a href='http://aliceausten.org/events/' target="_blank">Fort Wadsworth</a></td> 
+					<td>Staten Island, NY</td></tr>
+				<tr><td><a href='http://aliceausten.org/events/' target="_blank">Noble Maritime Collection</a></td> 
+					<td>Staten Island, NY</td></tr>
+				<tr><td><a href='http://aliceausten.org/events/' target="_blank">Alice Austen House</a></td> 
+					<td>Staten Island, NY</td></tr>
+				<tr><td><a href='http://aliceausten.org/events/' target="_blank">Billiou-Stillwell-Perine House</a></td> 
+					<td>Staten Island, NY</td></tr>
+				<tr><td><a href='http://aliceausten.org/events/' target="_blank">Conference House</a></td> 
+					<td>Staten Island, NY</td></tr>
+				<tr><td><a href='http://aliceausten.org/events/' target="_blank">Seguine Mansion</a></td> 
+					<td>Staten Island, NY</td></tr>
+				<tr><td><a href='http://aliceausten.org/events/' target="_blank">Historic Richmond Town</a></td> 
+					<td>Staten Island, NY</td></tr>
+				<tr><td><a href='http://aliceausten.org/events/' target="_blank">Conference House</a></td> 
+					<td>Staten Island, NY</td></tr>
+				<tr><td><a href='http://aliceausten.org/events/' target="_blank">Seguine Mansion</a></td> 
+					<td>Staten Island, NY</td></tr>
+				<tr><td><a href='http://aliceausten.org/events/' target="_blank">Historic Richmond Town</a></td> 
+					<td>Staten Island, NY</td></tr>
+			</table>
+			<table id="bronxMuseums">
+				<tr><td><a href='http://www.nybg.org/visit/exhibitions.php' target="_blank">New York Botanical Garden</a></td> 
+					<td>Bronx, NY</td></tr>
+				<tr><td><a href='http://www.bronxmuseum.org/events/' target="_blank">Bronx Museum</a></td>
+					<td>Bronx, NY</td></tr>
+				<tr><td><a href='http://www.bronxmuseum.org/events/' target="_blank">Derfner Judaica Museum</a></td>
+					<td>Bronx, NY</td></tr>
+				<tr><td><a href='http://www.bronxmuseum.org/events/' target="_blank">Wave Hill</a></td>
+					<td>Bronx, NY</td></tr>
+				<tr><td><a href='http://www.bronxmuseum.org/events/' target="_blank">Hall of Fame for Great Americans</a></td>
+					<td>Bronx, NY</td></tr>
+				<tr><td><a href='http://www.bronxmuseum.org/events/' target="_blank">City Island Nautical Museum</a></td>
+					<td>Bronx, NY</td></tr>
+				<tr><td><a href='http://www.bronxmuseum.org/events/' target="_blank">Maritime Industry Museum</a></td>
+					<td>Bronx, NY</td></tr>
+				<tr><td><a href='http://www.bronxmuseum.org/events/' target="_blank">Hall of Fame for Great Americans</a></td>
+					<td>Bronx, NY</td></tr>
+				<tr><td><a href='http://www.bronxmuseum.org/events/' target="_blank">City Island Nautical Museum</a></td>
+					<td>Bronx, NY</td></tr>
+				<tr><td><a href='http://www.bronxmuseum.org/events/' target="_blank">Maritime Industry Museum</a></td>
+					<td>Bronx, NY</td></tr>
+			</table>
+			
+			<table id="africanMuseums">
+				<tr><td><a href='http://mocada.org/awake-in-the-water/' target="_blank">Museum of Contemporary African Diasporan Arts</a></td> 
+					<td>Brooklyn, NY</td></tr>
+				<tr><td><a href='http://www.studiomuseum.org/event-calendar/' target="_blank">Studio Museum of Harlem</a></td>
+					<td>Manhattan, NY</td></tr>
+				<tr><td><a href='http://www.bronxmuseum.org/events/' target="_blank">Hall of Fame for Great Americans</a></td>
+					<td>Bronx, NY</td></tr>
+				<tr><td><a href='http://aliceausten.org/events/' target="_blank">Historic Richmond Town</a></td> 
+					<td>Staten Island, NY</td></tr>
+				<tr><td><a href='http://aliceausten.org/events/' target="_blank">Noble Maritime Collection</a></td> 
+					<td>Staten Island, NY</td></tr>
+				<tr><td><a href='http://aliceausten.org/events/' target="_blank">Alice Austen House</a></td> 
+					<td>Staten Island, NY</td></tr>
+				<tr><td><a href='http://www.queensmuseum.org/events/' target="_blank">Louis Armstrong House</a></td>
+					<td>Queens, NY</td></tr>
+				<tr><td><a href='http://www.bronxmuseum.org/events/' target="_blank">Hall of Fame for Great Americans</a></td>
+					<td>Bronx, NY</td></tr>
+				<tr><td><a href='http://www.bronxmuseum.org/events/' target="_blank">City Island Nautical Museum</a></td>
+					<td>Bronx, NY</td></tr>
+				<tr><td><a href='http://www.bronxmuseum.org/events/' target="_blank">Maritime Industry Museum</a></td>
+					<td>Bronx, NY</td></tr>
+			</table>
+			<table id="asianMuseums">
+				<tr><td><a href='http://asiasociety.org/new-york/events/upcoming' target="_blank">Asia Society</a></td> 
+					<td>Manhattan, NY</td></tr>
+				<tr><td><a href='http://www.japansociety.org/calendar' target="_blank">Japan Society</a></td>
+					<td>Manhattan, NY</td></tr>
+				<tr><td><a href='http://www.bronxmuseum.org/events/' target="_blank">Hall of Fame for Great Americans</a></td>
+					<td>Bronx, NY</td></tr>
+				<tr><td><a href='http://aliceausten.org/events/' target="_blank">Historic Richmond Town</a></td> 
+					<td>Staten Island, NY</td></tr>
+				<tr><td><a href='http://aliceausten.org/events/' target="_blank">Noble Maritime Collection</a></td> 
+					<td>Staten Island, NY</td></tr>
+				<tr><td><a href='http://aliceausten.org/events/' target="_blank">Alice Austen House</a></td> 
+					<td>Staten Island, NY</td></tr>
+				<tr><td><a href='http://www.queensmuseum.org/events/' target="_blank">Louis Armstrong House</a></td>
+					<td>Queens, NY</td></tr>
+				<tr><td><a href='http://www.bronxmuseum.org/events/' target="_blank">Hall of Fame for Great Americans</a></td>
+					<td>Bronx, NY</td></tr>
+				<tr><td><a href='http://www.bronxmuseum.org/events/' target="_blank">City Island Nautical Museum</a></td>
+					<td>Bronx, NY</td></tr>
+				<tr><td><a href='http://www.bronxmuseum.org/events/' target="_blank">Maritime Industry Museum</a></td>
+					<td>Bronx, NY</td></tr>
+			</table>
+			<table id="europeanMuseums">
+				<tr><td><a href='http://www.cjh.org/p/42' target="_blank">Center for Jewish History</a></td> 
+					<td>Manhattan, NY</td></tr>
+				<tr><td><a href='http://www.frick.org/exhibitions' target="_blank">The Frick Collection</a></td>
+					<td>Manhattan, NY</td></tr>
+				<tr><td><a href='http://www.bronxmuseum.org/events/' target="_blank">Hall of Fame for Great Americans</a></td>
+					<td>Bronx, NY</td></tr>
+				<tr><td><a href='http://aliceausten.org/events/' target="_blank">Historic Richmond Town</a></td> 
+					<td>Staten Island, NY</td></tr>
+				<tr><td><a href='http://aliceausten.org/events/' target="_blank">Noble Maritime Collection</a></td> 
+					<td>Staten Island, NY</td></tr>
+				<tr><td><a href='http://aliceausten.org/events/' target="_blank">Alice Austen House</a></td> 
+					<td>Staten Island, NY</td></tr>
+				<tr><td><a href='http://www.queensmuseum.org/events/' target="_blank">Louis Armstrong House</a></td>
+					<td>Queens, NY</td></tr>
+				<tr><td><a href='http://www.bronxmuseum.org/events/' target="_blank">Hall of Fame for Great Americans</a></td>
+					<td>Bronx, NY</td></tr>
+				<tr><td><a href='http://www.bronxmuseum.org/events/' target="_blank">City Island Nautical Museum</a></td>
+					<td>Bronx, NY</td></tr>
+				<tr><td><a href='http://www.bronxmuseum.org/events/' target="_blank">Maritime Industry Museum</a></td>
+					<td>Bronx, NY</td></tr>
+			</table>
+			<table id="modernMuseums">
+				<tr><td><a href='http://www.moma.org/visit/calendar' target="_blank">Museum of Modern Art</a></td> 
+					<td>Manhattan, NY</td></tr>
+				<tr><td><a href='http://www.guggenheim.org/new-york/calendar-and-events' target="_blank">Guggenheim Museum</a></td>
+					<td>Manhattan, NY</td></tr>
+				<tr><td><a href='http://www.bronxmuseum.org/events/' target="_blank">Hall of Fame for Great Americans</a></td>
+					<td>Bronx, NY</td></tr>
+				<tr><td><a href='http://aliceausten.org/events/' target="_blank">Historic Richmond Town</a></td> 
+					<td>Staten Island, NY</td></tr>
+				<tr><td><a href='http://aliceausten.org/events/' target="_blank">Noble Maritime Collection</a></td> 
+					<td>Staten Island, NY</td></tr>
+				<tr><td><a href='http://aliceausten.org/events/' target="_blank">Alice Austen House</a></td> 
+					<td>Staten Island, NY</td></tr>
+				<tr><td><a href='http://www.queensmuseum.org/events/' target="_blank">Louis Armstrong House</a></td>
+					<td>Queens, NY</td></tr>
+				<tr><td><a href='http://www.bronxmuseum.org/events/' target="_blank">Hall of Fame for Great Americans</a></td>
+					<td>Bronx, NY</td></tr>
+				<tr><td><a href='http://www.bronxmuseum.org/events/' target="_blank">City Island Nautical Museum</a></td>
+					<td>Bronx, NY</td></tr>
+				<tr><td><a href='http://www.bronxmuseum.org/events/' target="_blank">Maritime Industry Museum</a></td>
+					<td>Bronx, NY</td></tr>
+			</table>
+			<table id="scienceMuseums">
+				<tr><td><a href='http://www.amnh.org/calendar' target="_blank">American Museum of Natural History</a></td> 
+					<td>Manhattan, NY</td></tr>
+				<tr><td><a href='http://nysci.org/programs-main/exhibits-folio/' target="_blank">New York Hall of Science</a></td>
+					<td>Queens, NY</td> </tr>
+				<tr><td><a href='http://www.bronxmuseum.org/events/' target="_blank">Hall of Fame for Great Americans</a></td>
+					<td>Bronx, NY</td></tr>
+				<tr><td><a href='http://aliceausten.org/events/' target="_blank">Historic Richmond Town</a></td> 
+					<td>Staten Island, NY</td></tr>
+				<tr><td><a href='http://aliceausten.org/events/' target="_blank">Noble Maritime Collection</a></td> 
+					<td>Staten Island, NY</td></tr>
+				<tr><td><a href='http://aliceausten.org/events/' target="_blank">Alice Austen House</a></td> 
+					<td>Staten Island, NY</td></tr>
+				<tr><td><a href='http://www.queensmuseum.org/events/' target="_blank">Louis Armstrong House</a></td>
+					<td>Queens, NY</td></tr>
+				<tr><td><a href='http://www.bronxmuseum.org/events/' target="_blank">Hall of Fame for Great Americans</a></td>
+					<td>Bronx, NY</td></tr>
+				<tr><td><a href='http://www.bronxmuseum.org/events/' target="_blank">City Island Nautical Museum</a></td>
+					<td>Bronx, NY</td></tr>
+				<tr><td><a href='http://www.bronxmuseum.org/events/' target="_blank">Maritime Industry Museum</a></td>
+					<td>Bronx, NY</td></tr>
+			</table>
+
+		</div>
+
+		<div id="map-canvas"></div>
+
+	</div>				
+
+	<div class="footerContainer clearfix">
+		<div id="copyright">Concept &amp; Website by Mollie Panzner  2015.</div>
+    	<ul id="footerNav" class="nav navbar-nav navbar-right">
+	        <li class="footLink navLink"><a href="https://www.facebook.com/" target="_blank"><img src="images/fb.png" class="social"></a></li>
+	        <li class="footLink navLink"><a href="https://twitter.com/" target="_blank"><img src="images/t.png" class="social"></a></li>
+	        <li class="footLink navLink"><a href="http://googleplus.com/" target="_blank"><img src="images/g.png" class="social"></a></li>     
+    	</ul>
+	</div>
+
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+	</body>
+
+</html>

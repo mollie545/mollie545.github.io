@@ -1,0 +1,128 @@
+*, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body{
+	color: grey;
+	font-family: sans-serif;
+}
+
+h3{
+	font-size: 2.5em;
+	margin-top: .3em;
+}
+
+h5{
+	font-size: 1.4em;
+}
+
+td{
+	padding-right: 2.5em;
+}
+
+.navbar{
+	margin-bottom: 0;
+	background-color: white;
+	border: solid 0;
+	border-radius: 4px
+}
+
+.navLink{
+	font-size: 15px;
+}
+
+.footLink{
+	padding-top: 0;
+	padding-right: 1em;
+}
+
+.container-fluid{
+	height: 6em;
+}
+
+.booksInBed{
+	display: inline;
+	float:left;
+	width: 100%;
+	margin-top: -3em;
+}
+
+.center{
+	position: absolute;
+    top:12em;
+    left:5em;
+    display: inline;
+	width: 85%;
+	height: 50%;
+	background-color: white;
+	border-radius: 4px;
+}
+
+.btn, .button-default{
+	background-color: white;
+	border-color: white;
+	color: grey;
+}
+
+.dropdown{
+	display: inline;
+	float: left;
+	padding: 1em;
+	padding-right: 3em;
+	margin-right: .5em;
+	margin-left: 1em;
+	font-family: sans-serif;
+	font-weight: 500;
+	line-height: 1.1;
+	color: inherit;
+	background-color: white;
+}
+
+.footerNav{
+	padding-top: 10px;
+}
+
+.museumDetails{
+	clear: left;
+	float: left;
+	margin: 0 2em 2em;
+	height: 65%;
+	width: 52%;
+	padding-top: 2em;
+}
+
+#copyright{
+	padding-left: 12px;
+	display: inline;
+	float: left;
+	padding-top: 1.7em;
+	font-size: 1em;
+}
+
+.footerContainer{
+	clear:left;
+}
+
+#map-canvas {
+	margin-top: 6%;
+	margin-left: 1.5em;
+    height: 70%;
+    width: 40%;
+    margin-bottom: 7%;
+}
+
+
+
+/* clearfix class */
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
